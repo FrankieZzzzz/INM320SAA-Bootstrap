@@ -13,9 +13,12 @@
   </head>
   <body>
     <main class="container">
-      <div class="row">
-        <!-- size sidebar -->
-        <section class="sidebar col-md-3 col-lg-2">
+      <div class="row justify-content-center">
+        <!-- ******************************** -->
+        <!-- question: how to make side bar has the same height with the content on large window size -->
+        <!-- question: on the large side window, the Logo and title missing -->
+        <!-- sidebar -->
+        <section class="col-md-3 col-lg-2">
           <div class="offcanvas-md offcanvas-start bg-dark" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
             <div class="offcanvas-header my-3 px-3">
               <div class="px-3 d-flex align-items-center">
@@ -70,7 +73,7 @@
           <header class="py-3">
             <!-- mobile first header -->
             <section class="container">
-              <div class="row align-items-center">
+              <div class="row align-items-center justify-content-between">
                 <!-- burger menu and title-->
                 <div class="col-2 d-lg-none">
                   <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
@@ -94,7 +97,9 @@
           <!-- main content -->
           <!-- first section for 4 small box -->
           <section class="container text-center">
-            <div class="row py-1 g-1">
+            <!-- ******************************** -->
+            <!-- question: How to give gutter for left and right -->
+            <div class="row py-1">
               <div class="col-6 col-md-3 border border-light-subtle py-3 rounded">
                 <div class="fs-6 text-secondary">Unresolved</div>
                 <div class="fs-1 pt-2">60</div>
@@ -115,7 +120,9 @@
           </section>
           <!-- second section for chat bar -->
           <section class="container">
-            <div class="row border border-light-subtle rounded p-3">
+            <div class="row border border-light-subtle rounded px-3">
+              <!-- ******************************** -->
+              <!-- question: why the section width is bigger than others -->
               <div class="col-12 col-md-8">
                 <div class="d-flex align-items-center justify-content-between pt-lg-5">
                   <div>
@@ -136,7 +143,9 @@
                 <!-- chat bar -->
                 <img src="assets/images/full graph.png" alt="" class="w-100" />
               </div>
-              <div class="col-12 col-lg-4 text-center mt-3 border-start">
+              <!-- ******************************** -->
+              <!-- question: How to make the border-start disppear on mobile but show on large window size -->
+              <div class="col-12 col-lg-4 text-center mt-3">
                 <div class="border-bottom border-light-subtle py-3">
                   <div class="fs-6 text-secondary">Resolved</div>
                   <div class="fs-2 pt-2">449</div>
@@ -194,7 +203,7 @@
                   </div>
                 </div>
               </div>
-              <div class="container border border-light-subtle rounded p-4 mt-3 mt-lg-0 col-12 col-lg-6">
+              <div class="border border-light-subtle rounded p-4 mt-3 mt-lg-0 col-12 col-lg-6">
                 <div class="d-flex align-items-center justify-content-between">
                   <div>
                     <h3 class="fs-5">Tasks</h3>
