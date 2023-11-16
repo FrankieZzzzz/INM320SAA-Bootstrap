@@ -18,61 +18,70 @@
         <!-- question: how to make side bar has the same height with the content on large window size -->
         <!-- question: on the large side window, the Logo and title missing -->
         <!-- sidebar -->
-        <section class="row col-md-3 col-lg-2">
-          <div class="offcanvas-md offcanvas-start bg-dark" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
-            <div class="offcanvas-header my-3 px-3">
-              <div class="px-3 d-flex align-items-center">
-                <img src="assets/images/logo.png" alt="" style="width: 42px; height: 42px" />
-                <span class="offcanvas-title px-3 fs-3 text-secondary" id="offcanvasLabel">Dashboard Kit</span>
-              </div>
-              <button type="button" class="me-3 text-secondary bg-transparent border-0" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#offcanvas">
-                <i class="fa-solid fa-xmark fs-2"></i>
-              </button>
+        <section class="row col-md-3">
+          <!-- sidebar logo for desktop-->
+          <div class="row">
+            <div class="d-none d-md-flex align-items-center bg-dark px-4">
+              <img src="assets/images/logo.png" alt="" style="width: 32px; height: 32px" />
+              <span class="offcanvas-title px-3 fs-5 text-secondary" id="offcanvasLabel">Dashboard Kit</span>
             </div>
-            <div class="offcanvas-body list-group fs-5">
-              <a href="#" class="list-group-item list-group-item-action p-4 bg-transparent text-secondary border-0">
-                <i class="fa-solid fa-chart-pie"></i>
-                <span class="">Overview</span>
-              </a>
-              <a href="#" class="list-group-item list-group-item-action p-4 bg-transparent text-secondary border-0">
-                <i class="fa-solid fa-ticket"></i>
-                <span>Tickets</span>
-              </a>
-              <a href="#" class="list-group-item list-group-item-action p-4 bg-transparent text-secondary border-0">
-                <i class="fa-solid fa-lightbulb"></i>
-                <span>Idea</span>
-              </a>
-              <a href="#" class="list-group-item list-group-item-action p-4 bg-transparent text-secondary border-0">
-                <i class="fa-solid fa-users"></i>
-                <span>Contacts</span>
-              </a>
-              <a href="#" class="list-group-item list-group-item-action p-4 bg-transparent text-secondary border-0">
-                <i class="fa-solid fa-user-tie"></i>
-                <span>Agents</span>
-              </a>
-              <a href="#" class="list-group-item list-group-item-action p-4 bg-transparent text-secondary border-0">
-                <i class="fa-solid fa-book"></i>
-                <span>Articles</span>
-              </a>
-              <hr />
-              <div>
+            <div class="offcanvas-md offcanvas-start bg-dark" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+              <!-- sidebar header -->
+              <div class="offcanvas-header my-3 px-3">
+                <div class="px-3 d-flex align-items-center">
+                  <img src="assets/images/logo.png" alt="" style="width: 42px; height: 42px" />
+                  <span class="offcanvas-title px-3 fs-3 text-secondary" id="offcanvasLabel">Dashboard Kit</span>
+                </div>
+                <button type="button" class="me-3 text-secondary bg-transparent border-0" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#offcanvas">
+                  <i class="fa-solid fa-xmark fs-2"></i>
+                </button>
+              </div>
+              <!-- side bar body -->
+              <div class="offcanvas-body list-group fs-5">
                 <a href="#" class="list-group-item list-group-item-action p-4 bg-transparent text-secondary border-0">
-                  <i class="fa-solid fa-gear"></i>
-                  <span>Settings</span>
+                  <i class="fa-solid fa-chart-pie"></i>
+                  <span class="">Overview</span>
                 </a>
                 <a href="#" class="list-group-item list-group-item-action p-4 bg-transparent text-secondary border-0">
-                  <i class="fa-solid fa-bag-shopping"></i>
-                  <span>Subscription</span>
+                  <i class="fa-solid fa-ticket"></i>
+                  <span>Tickets</span>
                 </a>
+                <a href="#" class="list-group-item list-group-item-action p-4 bg-transparent text-secondary border-0">
+                  <i class="fa-solid fa-lightbulb"></i>
+                  <span>Idea</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action p-4 bg-transparent text-secondary border-0">
+                  <i class="fa-solid fa-users"></i>
+                  <span>Contacts</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action p-4 bg-transparent text-secondary border-0">
+                  <i class="fa-solid fa-user-tie"></i>
+                  <span>Agents</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action p-4 bg-transparent text-secondary border-0">
+                  <i class="fa-solid fa-book"></i>
+                  <span>Articles</span>
+                </a>
+                <hr />
+                <div>
+                  <a href="#" class="list-group-item list-group-item-action p-4 bg-transparent text-secondary border-0">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Settings</span>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action p-4 bg-transparent text-secondary border-0">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span>Subscription</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </section>
         <!-- all content except sidebar -->
-        <div class="row  px-5 col-md-9 col-lg-10">
-          <header class="py-3">
+        <div class="row px-2 col-md-9 ms-md-2">
+          <header class="container py-4">
             <!-- mobile first header -->
-            <section class="container">
+            <section class="row">
               <div class="row align-items-center justify-content-between">
                 <!-- burger menu and title-->
                 <div class="col-2 d-lg-none">
@@ -80,7 +89,7 @@
                     <i class="fa-solid fa-bars fs-2"></i>
                   </button>
                 </div>
-                <h6 class="col-4 pt-1">Overview</h6>
+                <h6 class="col-4 pt-1 fs-6">Overview</h6>
                 <div class="col-6 d-flex flex-row align-items-center justify-content-end">
                   <!-- search icon and notification -->
                   <div class="mx-3 border-end">
@@ -99,7 +108,7 @@
           <section class="container text-center">
             <!-- ******************************** -->
             <!-- question: How to give gutter for left and right -->
-            <div class="row py-4 ">
+            <div class="row py-4">
               <div class="col-6 col-md-3 border border-light-subtle py-3 rounded">
                 <div class="fs-6 text-secondary">Unresolved</div>
                 <div class="fs-1 pt-2">60</div>
@@ -120,11 +129,11 @@
           </section>
           <!-- second section for chat bar -->
           <section class="container">
-            <div class="row border border-light-subtle rounded px-2 ">
+            <div class="row border border-light-subtle rounded px-2">
               <!-- ******************************** -->
               <!-- question: why the section width is bigger than others -->
               <div class="col-12 col-md-8">
-                <div class="d-flex align-items-center justify-content-between pt-lg-5">
+                <div class="d-flex align-items-center justify-content-between pt-3 pt-lg-5">
                   <div>
                     <h3 class="fs-5">Today's Trends</h3>
                     <p class="fs-6 text-secondary">as of May 2019, 09:41 PM</p>
@@ -174,7 +183,7 @@
           <!-- second section for Unresolved tickets and tasks-->
           <section class="container my-3">
             <div class="row py-3">
-              <div class="border border-light-subtle rounded p-4 col-12 col-lg-6 " >
+              <div class="border border-light-subtle rounded p-4 col-12 col-lg-6">
                 <div class="d-flex align-items-center justify-content-between">
                   <div>
                     <h3 class="fs-5">Unresolved tickets</h3>
