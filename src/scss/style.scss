@@ -1,9 +1,48 @@
-// @import "../../node_modules/bootstrap/scss/functions";
-// @import "../../node_modules/bootstrap/scss/variables";
+// $primary-color: yellow;
 
-// $custom-colors:(
-//     "funnyPink": rgb(255, 76, 106)
-// );
-// $theme-color: map-merge($theme-colors,$custom-colors);
+// body{
+//     background-color: $primary-color;
+// }
 
-// @import "../../node_modules/bootstrap/scss/bootstrap";
+// $mobile-font-size:10px;
+
+// .mobile-font-size{
+//     font-size: $mobile-font-size;
+// }
+
+$number-font-size: 30px;
+$blue-border:1px solid #3751FF;
+$blue-font:#3751FF;
+$small-number:20px;
+$font-weight:bold;
+
+
+
+.number-font-size{
+    font-size:$number-font-size ;
+}
+
+.blue-border{
+    border: $blue-border;
+}
+
+.blue-font{
+    color: $blue-font;
+}
+
+.small-number{
+    font-size:$small-number ;
+}
+
+.font-weight{
+    font-weight:$font-weight ;
+}
+
+
+
+
+
+
+
+
+
