@@ -1,30 +1,16 @@
-// $primary-color: yellow;
-
-// body{
-//     background-color: $primary-color;
-// }
-
-// $mobile-font-size:10px;
-
-// .mobile-font-size{
-//     font-size: $mobile-font-size;
-// }
-
 $number-font-size: 30px;
-$blue-border:1px solid #3751FF;
+// $blue-border:1px solid #3751FF;
 $blue-font:#3751FF;
 $small-number:20px;
 $font-weight:bold;
-
-
 
 .number-font-size{
     font-size:$number-font-size ;
 }
 
-.blue-border{
-    border: $blue-border;
-}
+// .blue-border{
+//     border: $blue-border;
+// }
 
 .blue-font{
     color: $blue-font;
@@ -33,10 +19,19 @@ $font-weight:bold;
 .small-number{
     font-size:$small-number ;
 }
-
 .font-weight{
     font-weight:$font-weight ;
 }
+#right_side_section{
+    background: #F7F8FC;
+}
+
+// main{
+//     box-sizing: border-box
+// }
+// .box_gutter{
+//     box-sizing: border-box
+// }
 
 
 

@@ -13,21 +13,22 @@
   </head>
   <body>
     <main class="container">
-      <div class="row justify-content-center ">
+      <div class="row justify-content-center my-0 my-lg-4">
         <!-- ******************************** -->
         <!-- question: how to make side bar has the same height with the content on large window size -->
         <!-- question: on the large side window, the Logo and title missing -->
         <!-- sidebar -->
-        <section class="row col-md-3 ">
+        <section class="row col-lg-3">
           <!-- sidebar logo for desktop-->
-          <div class="row ">
-            <div class="d-none d-md-flex align-items-start p-4 bg-dark px-4">
-              <img src="assets/images/logo.png" alt="" style="width: 32px; height: 32px" />
+          <div class="bg-dark">
+            <div class="d-none d-lg-flex align-items-start p-4 px-3 mt-lg-4">
+              <img src="assets/images/logo.png" alt="company_logo" style="width: 32px; height: 32px" class="d-block" />
               <span class="offcanvas-title px-3 fs-5 text-secondary" id="offcanvasLabel">Dashboard Kit</span>
             </div>
-            <div class="offcanvas-md offcanvas-start bg-dark" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+
+            <div class="offcanvas-lg offcanvas-start bg-dark mt-lg-5" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
               <!-- sidebar header -->
-              <div class="offcanvas-header my-3 ">
+              <div class="offcanvas-header my-3">
                 <div class="px-3 d-flex align-items-center">
                   <img src="assets/images/logo.png" alt="" style="width: 42px; height: 42px" />
                   <span class="offcanvas-title px-3 fs-3 text-secondary" id="offcanvasLabel">Dashboard Kit</span>
@@ -37,8 +38,8 @@
                 </button>
               </div>
               <!-- side bar body -->
-              <div class="offcanvas-body list-group fs-5 ">
-                <a href="#" class="list-group-item list-group-item-action p-4 bg-transparent text-secondary border-0 ">
+              <div class="offcanvas-body list-group fs-5">
+                <a href="#" class="list-group-item list-group-item-action p-4 bg-transparent text-secondary border-0">
                   <i class="fa-solid fa-chart-pie"></i>
                   <span class="">Overview</span>
                 </a>
@@ -62,7 +63,6 @@
                   <i class="fa-solid fa-book"></i>
                   <span>Articles</span>
                 </a>
-                <hr />
                 <div>
                   <a href="#" class="list-group-item list-group-item-action p-4 bg-transparent text-secondary border-0">
                     <i class="fa-solid fa-gear"></i>
@@ -78,7 +78,7 @@
           </div>
         </section>
         <!-- all content except sidebar -->
-        <div class="row px-2 col-md-9 ms-md-2 ">
+        <div class="row col-md-9 px-4" id="right_side_section">
           <header class="container py-4">
             <!-- mobile first header -->
             <section class="row">
@@ -89,7 +89,7 @@
                     <i class="fa-solid fa-bars fs-2"></i>
                   </button>
                 </div>
-                <h6 class="col-4 pt-1 fs-5 ">Overview</h6>
+                <h6 class="col-4 pt-1 fs-5">Overview</h6>
                 <div class="col-6 d-flex flex-row align-items-center justify-content-end">
                   <!-- search icon and notification -->
                   <div class="mx-3 border-end">
@@ -105,45 +105,47 @@
           </header>
           <!-- main content -->
           <!-- first section for 4 small box -->
-          <section class="container text-center ">
-            <!-- ******************************** -->
-            <!-- question: How to give gutter for left and right -->
-            <div class="row py-4 g-3">
-              <div class="col-6 col-md-3 border border-light-subtle py-3 rounded ">
-                <div class="fs-6 text-secondary">Unresolved</div>
-                <div class="pt-2 number-font-size">60</div>
+          <section class="container text-center">
+            <div class="row">
+              <div class="col-12 col-lg-6 d-flex flex-row p-0">
+                <div class="col col-lg border border-light-subtle py-3 rounded bg-white me-2">
+                  <div class="fs-6 text-secondary">Unresolved</div>
+                  <div class="pt-2 number-font-size">60</div>
+                </div>
+                <div class="col col-lg border border-light-subtle py-3 rounded bg-white me-lg-2">
+                  <div class="fs-6 text-secondary">Overdue</div>
+                  <div class="pt-2 number-font-size">16</div>
+                </div>
               </div>
-              <div class="col-6 col-md-3   py-3 rounded blue-border">
-                <div class="fs-6 text-secondary">Overdue</div>
-                <div class="pt-2 number-font-size">16</div>
-              </div>
-              <div class="col-6 col-md-3 border border-light-subtle py-3 rounded">
-                <div class="fs-6 text-secondary">Open</div>
-                <div class="pt-2 number-font-size">43</div>
-              </div>
-              <div class="col-6 col-md-3 border border-light-subtle py-3 rounded">
-                <div class="fs-6 text-secondary">On hold</div>
-                <div class="pt-2 number-font-size">64</div>
+              <div class="col-12 col-lg-6 d-flex flex-row p-0">
+                <div class="col col-lg border border-light-subtle py-3 rounded bg-white me-2">
+                  <div class="fs-6 text-secondary">Open</div>
+                  <div class="pt-2 number-font-size">43</div>
+                </div>
+                <div class="col col-lg border border-light-subtle py-3 rounded bg-white">
+                  <div class="fs-6 text-secondary">On hold</div>
+                  <div class="pt-2 number-font-size">64</div>
+                </div>
               </div>
             </div>
           </section>
           <!-- second section for chat bar -->
-          <section class="container">
-            <div class="row border border-light-subtle rounded px-2">
+          <section class="container my-3">
+            <div class="row border border-light-subtle rounded px-2 bg-white">
               <!-- ******************************** -->
               <!-- question: why the section width is bigger than others -->
               <div class="col-12 col-md-8">
-                <div class="d-flex align-items-center justify-content-between pt-3 pt-lg-5">
+                <div class="d-flex align-items-center justify-content-between pt-3 pt-lg-2">
                   <div>
                     <h3 class="fs-5">Today's Trends</h3>
                     <p class="fs-6 text-secondary">as of May 2019, 09:41 PM</p>
                   </div>
                   <div class="d-flex text-secondary">
-                    <div>
+                    <div class="px-2">
                       <span><i class="fa-solid fa-minus text-primary"></i></span>
                       <span class="fs-6">Today</span>
                     </div>
-                    <div>
+                    <div class="px-2">
                       <span><i class="fa-solid fa-minus"></i></span>
                       <span class="fs-6">Yesterday</span>
                     </div>
@@ -155,25 +157,25 @@
               <!-- ******************************** -->
               <!-- question: How to make the border-start disppear on mobile but show on large window size -->
               <div class="col-12 col-lg-4 text-center mt-3">
-                <div class="border-bottom border-light-subtle py-3">
+                <div class="border-bottom border-light-subtle py-2">
                   <div class="fs-6 text-secondary">Resolved</div>
-                  <div class=" pt-2 small-number font-weight">449</div>
+                  <div class="pt-2 small-number font-weight">449</div>
                 </div>
-                <div class="border-bottom border-light-subtle py-3">
+                <div class="border-bottom border-light-subtle py-2">
                   <div class="fs-6 text-secondary">Received</div>
-                  <div class=" pt-2 small-number font-weight">426</div>
+                  <div class="pt-2 small-number font-weight">426</div>
                 </div>
-                <div class="border-bottom border-light-subtle py-3">
+                <div class="border-bottom border-light-subtle py-2">
                   <div class="fs-6 text-secondary">Average first response time</div>
-                  <div class=" pt-2 small-number font-weight">33m</div>
+                  <div class="pt-2 small-number font-weight">33m</div>
                 </div>
-                <div class="border-bottom border-light-subtle py-3">
+                <div class="border-bottom border-light-subtle py-2">
                   <div class="fs-6 text-secondary">Average response time</div>
-                  <div class=" pt-2 small-number font-weight">3H 8m</div>
+                  <div class="pt-2 small-number font-weight">3H 8m</div>
                 </div>
                 <div class="py-3">
                   <div class="fs-6 text-secondary">Resolution within SLA</div>
-                  <div class=" pt-2 small-number font-weight">94%</div>
+                  <div class="pt-2 small-number font-weight">94%</div>
                 </div>
               </div>
               <!-- find a time to install chart.js-->
@@ -181,11 +183,11 @@
             </div>
           </section>
           <!-- second section for Unresolved tickets and tasks-->
-          <section class="container my-3">
-            <div class="row py-3">
-              <div class="border border-light-subtle rounded p-4 col-12 col-lg-6">
+          <section class="container mb-4">
+            <div class="row">
+              <div class="border border-light-subtle rounded p-4 pt-lg-3 px-lg-3 col-12 col-lg bg-white mb-3 mb-lg-0 me-lg-2">
                 <div class="d-flex align-items-center justify-content-between">
-                  <div>
+                  <div class="m-0">
                     <h3 class="fs-5">Unresolved tickets</h3>
                     <p class="fs-6 text-secondary">Group: <span>Support</span></p>
                   </div>
@@ -193,7 +195,7 @@
                     <span class="fs-6 blue-font">View details</span>
                   </div>
                 </div>
-                <div class="col-12 mt-2">
+                <div class="col-12">
                   <div class="border-bottom border-light-subtle py-4 d-flex align-items-center justify-content-between">
                     <div class="fs-6">Resolved</div>
                     <div class="fs-5 text-secondary">4238</div>
@@ -212,7 +214,7 @@
                   </div>
                 </div>
               </div>
-              <div class="border border-light-subtle rounded p-4 mt-3 mt-lg-0 col-12 col-lg-6">
+              <div class="border border-light-subtle rounded p-4 pt-lg-3 px-lg-3 col-12 col-lg bg-white">
                 <div class="d-flex align-items-center justify-content-between">
                   <div>
                     <h3 class="fs-5">Tasks</h3>
@@ -222,7 +224,7 @@
                     <span class="fs-6 blue-font">View all</span>
                   </div>
                 </div>
-                <div class="col-12 mt-2">
+                <div class="col-12">
                   <div class="border-bottom border-light-subtle py-4 d-flex align-items-center justify-content-between">
                     <div class="fs-6">Create new task</div>
                     <i class="fa-solid fa-plus"></i>
