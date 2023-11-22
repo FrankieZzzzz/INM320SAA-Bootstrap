@@ -18,8 +18,8 @@
         <section class="row col-lg-3 p-0">
           <!-- sidebar logo for desktop-->
           <div class="bg-dark">
-            <div class="d-none d-lg-flex align-items-start p-4 px-3 mt-lg-4">
-              <img src="assets/images/logo.png" alt="company_logo" style="width: 32px; height: 32px" class="d-block" />
+            <div class="d-none d-lg-flex align-items-center p-4 px-3 mt-lg-4">
+              <img src="assets/images/logo.png" alt="company_logo" style="width: 35px; height: 35px" class="me-2" />
               <span class="offcanvas-title px-3 fs-5 text-secondary" id="offcanvasLabel">Dashboard Kit</span>
             </div>
 
@@ -35,39 +35,39 @@
                 </button>
               </div>
               <!-- side bar body -->
-              <div class="offcanvas-body list-group fs-5">
-                <a href="#" class="list-group-item list-group-item-action p-4 bg-transparent text-secondary border-0">
-                  <i class="fa-solid fa-chart-pie"></i>
-                  <span">Overview</span>
+              <div class="offcanvas-body list-group list-group-flush fs-5" data-bs-theme="dark">
+                <a href="#" class="list-group-item list-group-item-action p-4 text-secondary border-0 d-flex align-items-center border border-warning">
+                  <i class="fa-solid fa-chart-pie me-5"></i>
+                  Overview
                 </a>
-                <a href="#" class="list-group-item list-group-item-action p-4 bg-transparent text-secondary border-0">
-                  <i class="fa-solid fa-ticket"></i>
-                  <span>Tickets</span>
+                <a href="#" class="list-group-item list-group-item-action p-4 text-secondary border-0 d-flex align-items-center">
+                  <i class="fa-solid fa-ticket me-5"></i>
+                  Tickets
                 </a>
-                <a href="#" class="list-group-item list-group-item-action p-4 bg-transparent text-secondary border-0">
-                  <i class="fa-solid fa-lightbulb"></i>
-                  <span>Idea</span>
+                <a href="#" class="list-group-item list-group-item-action p-4 text-secondary border-0 d-flex align-items-center">
+                  <i class="fa-solid fa-lightbulb me-5"></i>
+                  Idea
                 </a>
-                <a href="#" class="list-group-item list-group-item-action p-4 bg-transparent text-secondary border-0">
-                  <i class="fa-solid fa-users"></i>
-                  <span>Contacts</span>
+                <a href="#" class="list-group-item list-group-item-action p-4 text-secondary border-0 d-flex align-items-center">
+                  <i class="fa-solid fa-users me-5"></i>
+                  Contacts
                 </a>
-                <a href="#" class="list-group-item list-group-item-action p-4 bg-transparent text-secondary border-0">
-                  <i class="fa-solid fa-user-tie"></i>
-                  <span>Agents</span>
+                <a href="#" class="list-group-item list-group-item-action p-4 text-secondary border-0 d-flex align-items-center">
+                  <i class="fa-solid fa-user-tie me-5"></i>
+                  Agents
                 </a>
-                <a href="#" class="list-group-item list-group-item-action p-4 bg-transparent text-secondary border-0">
-                  <i class="fa-solid fa-book"></i>
-                  <span>Articles</span>
+                <a href="#" class="list-group-item list-group-item-action p-4 text-secondary border-0 d-flex align-items-center">
+                  <i class="fa-solid fa-book me-5"></i>
+                  Articles
                 </a>
                 <div>
-                  <a href="#" class="list-group-item list-group-item-action p-4 bg-transparent text-secondary border-0">
-                    <i class="fa-solid fa-gear"></i>
-                    <span>Settings</span>
+                  <a href="#" class="list-group-item list-group-item-action p-4 text-secondary border-0 d-flex align-items-center">
+                    <i class="fa-solid fa-gear me-5"></i>
+                    Settings
                   </a>
-                  <a href="#" class="list-group-item list-group-item-action p-4 bg-transparent text-secondary border-0">
-                    <i class="fa-solid fa-bag-shopping"></i>
-                    <span>Subscription</span>
+                  <a href="#" class="list-group-item list-group-item-action p-4 text-secondary border-0 d-flex align-items-center">
+                    <i class="fa-solid fa-bag-shopping me-5"></i>
+                    Subscription
                   </a>
                 </div>
               </div>
@@ -75,7 +75,7 @@
           </div>
         </section>
         <!-- all content except sidebar -->
-        <div class="row col-lg-9 px-4" id="right_side_section" >
+        <div class="row col-lg-9 px-4" id="right_side_section">
           <header class="container py-4">
             <!-- mobile first header -->
             <section class="row">
@@ -86,7 +86,7 @@
                     <i class="fa-solid fa-bars fs-2"></i>
                   </button>
                 </div>
-                <h6 class="col-4 pt-4 fs-4 fs-lg-6">Overview</h6>
+                <h6 class="col-4 pt-1 pt-lg-4 fs-4 fs-lg-6">Overview</h6>
                 <div class="col-6 d-flex flex-row align-items-center justify-content-end p-0">
                   <!-- search icon and notification -->
                   <div class="mx-3 border-end">
@@ -103,23 +103,23 @@
           <!-- first section for 4 small box -->
           <section class="container text-center">
             <div class="row">
-              <div class="col-12 col-lg-6 d-flex flex-row p-0">
-                <div class="col col-lg border border-light-subtle py-3 rounded bg-white me-2">
-                  <div class="fs-6 text-secondary">Unresolved</div>
+              <div class="col-12 col-lg-6 d-flex flex-row p-0 mb-2 mb-lg-0">
+                <div class="col col-lg py-3 rounded bg-white me-2 custom-hover">
+                  <span class="fs-6">Unresolved</span>
                   <div class="pt-2 number-font-size">60</div>
                 </div>
-                <div class="col col-lg border border-light-subtle py-3 rounded bg-white me-lg-2">
-                  <div class="fs-6 text-secondary">Overdue</div>
+                <div class="col col-lg py-3 rounded bg-white me-lg-2 custom-hover">
+                  <span class="fs-6 custom_title">Overdue</span>
                   <div class="pt-2 number-font-size">16</div>
                 </div>
               </div>
               <div class="col-12 col-lg-6 d-flex flex-row p-0">
-                <div class="col col-lg border border-light-subtle py-3 rounded bg-white me-2">
-                  <div class="fs-6 text-secondary">Open</div>
+                <div class="col col-lg py-3 rounded bg-white me-2 custom-hover">
+                  <span class="fs-6 custom_title">Open</span>
                   <div class="pt-2 number-font-size">43</div>
                 </div>
-                <div class="col col-lg border border-light-subtle py-3 rounded bg-white">
-                  <div class="fs-6 text-secondary">On hold</div>
+                <div class="col col-lg py-3 rounded bg-white custom-hover">
+                  <span class="fs-6 custom_title">On hold</span>
                   <div class="pt-2 number-font-size">64</div>
                 </div>
               </div>
@@ -138,7 +138,7 @@
                 <canvas id="myChart"></canvas>
                 <!-- <img src="assets/images/full graph.png" alt="chart-graphic" class="w-100" /> -->
               </div>
-             
+
               <div class="col-12 col-lg-4 text-center mt-3">
                 <div class="border-bottom border-light-subtle py-2">
                   <div class="fs-6 text-secondary">Resolved</div>
@@ -208,7 +208,7 @@
                 <div class="col-12">
                   <div class="border-bottom border-light-subtle py-4 d-flex align-items-center justify-content-between">
                     <div class="fs-6">Create new task</div>
-                    <i class="fa-solid fa-plus bg-secondary rounded-2 bg-gradient p-1 opacity-75" style="--bs-bg-opacity: .3;"></i>
+                    <i class="fa-solid fa-plus bg-secondary rounded-2 bg-gradient p-1 opacity-75" style="--bs-bg-opacity: 0.3"></i>
                   </div>
                   <div class="border-bottom border-light-subtle py-4 d-flex align-items-center justify-content-between">
                     <div class="d-flex">
@@ -240,50 +240,55 @@
     </main>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
-     new Chart(document.getElementById("myChart"), {
-      type: 'line',
-      data: {
-        labels: [2013,2014,2015,2016,2017,2018,2019,2020,2021,2022],
-        datasets: [{ 
-            data: [2286,114,1106,106,107,111,133,221,783,2478],
-            label: "Asia",
-            borderColor: "#3751FF",
-            fill: false,
-            borderWidth: 1.5
-          }, { 
-            data: [282,350,411,502,3635,809,947,1402,3700,5267],
-            label: "Europe",
-            borderColor: "#DC4444",
-            fill: false,
-            borderWidth: 1.5
-          }, { 
-            data: [168,170,178,190,5203,2276,408,547,675,734],
-            label: "Europe",
-            borderColor: "#FFCA2B",
-            fill: false,
-            borderWidth: 1.5
-          }, { 
-            data: [40,20,2210,16,24,1238,2274,167,508,784],
-            label: "Latin America",
-            borderColor: "#167347",
-            fill: false,
-            borderWidth: 1.5
-          }, { 
-            data: [6,3,2,2,7,26,82,172,312,433],
-            label: "North America",
-            borderColor: "#BEADFA",
-            fill: false,
-            borderWidth: 1.5
-          }
-        ]
-      },
-      options: {
-        title: {
-          display: true,
-          text: 'World population per region (in millions)'
-        }
-      }
-});
+      new Chart(document.getElementById("myChart"), {
+        type: "line",
+        data: {
+          labels: [2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022],
+          datasets: [
+            {
+              data: [2286, 114, 1106, 106, 107, 111, 133, 221, 783, 2478],
+              label: "Asia",
+              borderColor: "#3751FF",
+              fill: false,
+              borderWidth: 1.5,
+            },
+            {
+              data: [282, 350, 411, 502, 3635, 809, 947, 1402, 3700, 5267],
+              label: "Europe",
+              borderColor: "#DC4444",
+              fill: false,
+              borderWidth: 1.5,
+            },
+            {
+              data: [168, 170, 178, 190, 5203, 2276, 408, 547, 675, 734],
+              label: "Europe",
+              borderColor: "#FFCA2B",
+              fill: false,
+              borderWidth: 1.5,
+            },
+            {
+              data: [40, 20, 2210, 16, 24, 1238, 2274, 167, 508, 784],
+              label: "Latin America",
+              borderColor: "#167347",
+              fill: false,
+              borderWidth: 1.5,
+            },
+            {
+              data: [6, 3, 2, 2, 7, 26, 82, 172, 312, 433],
+              label: "North America",
+              borderColor: "#BEADFA",
+              fill: false,
+              borderWidth: 1.5,
+            },
+          ],
+        },
+        options: {
+          title: {
+            display: true,
+            text: "World population per region (in millions)",
+          },
+        },
+      });
     </script>
   </body>
 </html>
