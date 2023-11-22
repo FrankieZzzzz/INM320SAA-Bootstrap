@@ -13,10 +13,9 @@
   </head>
   <body>
     <main class="container">
-      <div class="row justify-content-center">
-       
+      <div class="row my-lg-4 justify-content-around shadow">
         <!-- sidebar -->
-        <section class="row col-lg-3">
+        <section class="row col-lg-3 p-0">
           <!-- sidebar logo for desktop-->
           <div class="bg-dark">
             <div class="d-none d-lg-flex align-items-start p-4 px-3 mt-lg-4">
@@ -76,25 +75,24 @@
           </div>
         </section>
         <!-- all content except sidebar -->
-        <div class="row col-md-9 px-4" id="right_side_section">
+        <div class="row col-lg-9 px-4" id="right_side_section" >
           <header class="container py-4">
             <!-- mobile first header -->
             <section class="row">
               <div class="row align-items-center justify-content-between">
                 <!-- burger menu and title-->
-                <div class="col-2 d-lg-none">
+                <div class="col-2 d-lg-none p-0">
                   <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
                     <i class="fa-solid fa-bars fs-2"></i>
                   </button>
                 </div>
-                <h6 class="col-4 pt-3 fs-4 fs-lg-6">Overview</h6>
-                <div class="col-6 d-flex flex-row align-items-center justify-content-end">
+                <h6 class="col-4 pt-4 fs-4 fs-lg-6">Overview</h6>
+                <div class="col-6 d-flex flex-row align-items-center justify-content-end p-0">
                   <!-- search icon and notification -->
                   <div class="mx-3 border-end">
                     <img src="assets/images/search.png" alt="" class="px-3" />
                     <img src="assets/images/notification.png" alt="" class="pe-3" />
                   </div>
-
                   <!-- user icon -->
                   <img src="assets/images/photo.png" alt="" />
                 </div>
@@ -130,30 +128,17 @@
           <!-- second section for chat bar -->
           <section class="container my-3">
             <div class="row border border-light-subtle rounded px-2 bg-white">
-              <!-- ******************************** -->
-              <!-- question: why the section width is bigger than others -->
-              <div class="col-12 col-md-8">
-                <div class="d-flex align-items-center justify-content-between pt-3 pt-lg-2">
+              <div class="col-12 col-lg-8">
+                <div class="d-flex align-items-center justify-content-between py-4 pt-lg-4">
                   <div>
-                    <h3 class="fs-5">Today's Trends</h3>
-                    <p class="fs-6 text-secondary">as of May 2019, 09:41 PM</p>
-                  </div>
-                  <div class="d-flex text-secondary">
-                    <div class="px-2">
-                      <span><i class="fa-solid fa-minus text-primary"></i></span>
-                      <span class="fs-6">Today</span>
-                    </div>
-                    <div class="px-2">
-                      <span><i class="fa-solid fa-minus"></i></span>
-                      <span class="fs-6">Yesterday</span>
-                    </div>
+                    <h3 class="fs-6">Ticket sales over the past ten years</h3>
                   </div>
                 </div>
                 <!-- chat bar -->
-                <img src="assets/images/full graph.png" alt="" class="w-100" />
+                <canvas id="myChart"></canvas>
+                <!-- <img src="assets/images/full graph.png" alt="chart-graphic" class="w-100" /> -->
               </div>
-              <!-- ******************************** -->
-              <!-- question: How to make the border-start disppear on mobile but show on large window size -->
+             
               <div class="col-12 col-lg-4 text-center mt-3">
                 <div class="border-bottom border-light-subtle py-2">
                   <div class="fs-6 text-secondary">Resolved</div>
@@ -176,8 +161,6 @@
                   <div class="pt-2 small-number font-weight">94%</div>
                 </div>
               </div>
-              <!-- find a time to install chart.js-->
-              <!-- <canvas id="myChart"></canvas> -->
             </div>
           </section>
           <!-- second section for Unresolved tickets and tasks-->
@@ -225,7 +208,7 @@
                 <div class="col-12">
                   <div class="border-bottom border-light-subtle py-4 d-flex align-items-center justify-content-between">
                     <div class="fs-6">Create new task</div>
-                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-plus bg-secondary rounded-2 bg-gradient p-1 opacity-75" style="--bs-bg-opacity: .3;"></i>
                   </div>
                   <div class="border-bottom border-light-subtle py-4 d-flex align-items-center justify-content-between">
                     <div class="d-flex">
@@ -255,6 +238,52 @@
         </div>
       </div>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+     new Chart(document.getElementById("myChart"), {
+      type: 'line',
+      data: {
+        labels: [2013,2014,2015,2016,2017,2018,2019,2020,2021,2022],
+        datasets: [{ 
+            data: [2286,114,1106,106,107,111,133,221,783,2478],
+            label: "Asia",
+            borderColor: "#3751FF",
+            fill: false,
+            borderWidth: 1.5
+          }, { 
+            data: [282,350,411,502,3635,809,947,1402,3700,5267],
+            label: "Europe",
+            borderColor: "#DC4444",
+            fill: false,
+            borderWidth: 1.5
+          }, { 
+            data: [168,170,178,190,5203,2276,408,547,675,734],
+            label: "Europe",
+            borderColor: "#FFCA2B",
+            fill: false,
+            borderWidth: 1.5
+          }, { 
+            data: [40,20,2210,16,24,1238,2274,167,508,784],
+            label: "Latin America",
+            borderColor: "#167347",
+            fill: false,
+            borderWidth: 1.5
+          }, { 
+            data: [6,3,2,2,7,26,82,172,312,433],
+            label: "North America",
+            borderColor: "#BEADFA",
+            fill: false,
+            borderWidth: 1.5
+          }
+        ]
+      },
+      options: {
+        title: {
+          display: true,
+          text: 'World population per region (in millions)'
+        }
+      }
+});
+    </script>
   </body>
 </html>
