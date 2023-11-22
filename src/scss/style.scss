@@ -21,10 +21,10 @@ $mediaQuery-mobile: 650px;
 .font-weight{
     font-weight:$font-weight ;
 }
-#right_side_section{
-    background:$back-color;
-}
 
+.custom-hover{
+    outline: 1.5px solid #E9ECEF;
+}
 
 @include mobileFirst {
     .custom_title {
