@@ -2,6 +2,7 @@ $number-font-size: 30px;
 $blue-font:#3751FF;
 $small-number:20px;
 $font-weight:bold;
+$back-color:#F7F8FC;
 
 .number-font-size{
     font-size:$number-font-size ;
@@ -16,7 +17,7 @@ $font-weight:bold;
     font-weight:$font-weight ;
 }
 #right_side_section{
-    background: #F7F8FC;
+    background:$back-color;
 }
 
 
