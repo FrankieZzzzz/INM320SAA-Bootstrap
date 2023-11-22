@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&display=swap');
 $number-font-size: 30px;
 $blue-font:#3751FF;
 $small-number:20px;
-$font-weight:bold;
+$font-weight:600;
 $mediaQuery-mobile: 650px;
 @mixin mobileFirst {
     @media only screen and (min-width: $mediaQuery-mobile) {
@@ -9,6 +10,9 @@ $mediaQuery-mobile: 650px;
     }
 };
 
+*{
+    font-family: 'Mulish', sans-serif;
+}
 .number-font-size{
     font-size:$number-font-size ;
 }
@@ -18,7 +22,7 @@ $mediaQuery-mobile: 650px;
 .small-number{
     font-size:$small-number ;
 }
-.font-weight{
+.custom_font_weight{
     font-weight:$font-weight ;
 }
 
